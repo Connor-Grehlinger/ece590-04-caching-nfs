@@ -2,11 +2,6 @@ ECE590-020: Enterprise Storage Architecture -- Fall 2018
 
 Course Project: Network File System with Caching
 
-Group Number: 3
-
-Group Members: Connor Grehlinger (cmg88), Nan Wang (nw83),
-Jeff Lasser (jcl35), Noah Pritt (ncp14)
-
 
 [Build](https://gitlab.oit.duke.edu/cmg88/ece590-020-storage-project-group3/badges/master/build.svg)
 
@@ -99,7 +94,9 @@ In the integration_test/ directory, you'll find the scripts:
 - setup_server.sh (script to run to setup the storage server of the Caching NFS)
 - remote_mount.sh (script to set up each client's NFS and enter the shared directory, usage: ./remote_mount.sh <ip-of-storage-server>)
 
-Before using the read & write tests in the shared directory, ensure 'pv' is installed. This program monitors the rate of data as it's piped through with (<stream_output> | pv | <dest>).
+Before using the read & write tests in the shared directory, ensure 'pv' is installed. This program monitors the rate of data as it's piped through with: 
+(<stream_output> | pv | <dest>).
+
 ```bash
 sudo apt-get install pv
 ```
